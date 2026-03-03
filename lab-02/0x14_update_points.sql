@@ -1,0 +1,10 @@
+SET SERVEROUTPUT ON;
+DECLARE
+  v_note ETUDIANT.note%TYPE;
+BEGIN
+  SELECT note INTO v_note FROM ETUDIANT WHERE id = 3;
+  UPDATE ETUDIANT SET note = v_note + 2 WHERE id = 3;
+  COMMIT;
+  DBMS_OUTPUT.PUT_LINE('Note mise à jour pour l''ID 3');
+END;
+/

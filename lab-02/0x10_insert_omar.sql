@@ -1,0 +1,7 @@
+SET SERVEROUTPUT ON;
+BEGIN
+  INSERT INTO ETUDIANT (id, nom, note) VALUES (5, 'Omar', 13);
+  COMMIT;
+  DBMS_OUTPUT.PUT_LINE('Insertion effectuée');
+END;
+/

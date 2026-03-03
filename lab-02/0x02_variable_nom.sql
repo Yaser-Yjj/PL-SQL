@@ -1,0 +1,7 @@
+SET SERVEROUTPUT ON;
+DECLARE
+  v_nom VARCHAR2(50) := 'Yasser';
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('Hello ' || v_nom);
+END;
+/
